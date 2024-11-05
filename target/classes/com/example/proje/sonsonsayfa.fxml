@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="sonsonAnchor" prefHeight="708.0" prefWidth="1095.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proje.sonsonSayfa">
+   <children>
+      <ImageView fitHeight="708.0" fitWidth="1095.0">
+         <image>
+            <Image url="@../../../resimler/Ekran%20görüntüsü%202024-10-13%20204032.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="-3.0" layoutY="2.0" prefHeight="57.0" prefWidth="1095.0" />
+      <AnchorPane layoutX="189.0" layoutY="177.0" prefHeight="41.0" prefWidth="456.0" style="-fx-background-color: b2b2b2;" />
+      <JFXButton fx:id="araButon" layoutX="357.0" layoutY="231.0" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: black; -fx-background-radius: 50;" text="Ara">
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="1.0" blue="0.34285715222358704" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.07000000029802322" green="0.9734285473823547" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font></JFXButton>
+      <JFXListView fx:id="sonucList" layoutX="3.0" layoutY="414.0" prefHeight="293.0" prefWidth="1084.0" style="-fx-border-color: black; -fx-border-width: 10; -fx-background-color: b2b2b2;" />
+      <JFXListView fx:id="malzemelerList" layoutX="858.0" layoutY="53.0" prefHeight="356.0" prefWidth="223.0" style="-fx-border-color: black; -fx-border-width: 10; -fx-background-color: b2b2b2;" />
+      <Label layoutX="833.0" layoutY="24.0" style="-fx-background-color: black; -fx-background-radius: 20;" text="Sistemdeki malzemeler" underline="true">
+         <font>
+            <Font name="Arial Black" size="20.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="1.0" blue="0.34285715222358704" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.07000000029802322" green="0.9734285473823547" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill></Label>
+      <Label layoutX="6.0" layoutY="348.0" prefHeight="29.0" prefWidth="821.0" style="-fx-background-color: black; -fx-background-radius: 5;" text="------------------------------------------------------Sonuç Ekranı----------------------------------------------">
+         <font>
+            <Font name="Arial Black" size="20.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="1.0" blue="0.34285715222358704" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.07000000029802322" green="0.9734285473823547" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill></Label>
+      <JFXButton layoutX="8.0" layoutY="5.0" onAction="#geriGel" style="-fx-background-color: black; -fx-background-radius: 50;" text="Geri gel">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="1.0" blue="0.34285715222358704" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.07000000029802322" green="0.9734285473823547" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill></JFXButton>
+      <Label alignment="CENTER" layoutX="19.0" layoutY="395.0" prefHeight="29.0" prefWidth="79.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Tarif Adı" underline="true">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="1.0" blue="0.34285715222358704" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.07000000029802322" green="0.9734285473823547" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label alignment="CENTER" layoutX="177.0" layoutY="395.0" prefHeight="29.0" prefWidth="79.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Kategori" underline="true">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="1.0" blue="0.34285715222358704" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.07000000029802322" green="0.9734285473823547" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label alignment="CENTER" layoutX="322.0" layoutY="395.0" prefHeight="29.0" prefWidth="179.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Hazırlanma Süresi(DK)" underline="true">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="1.0" blue="0.34285715222358704" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.07000000029802322" green="0.9734285473823547" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label alignment="CENTER" layoutX="618.0" layoutY="395.0" prefHeight="29.0" prefWidth="87.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Talimatlar" underline="true">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="1.0" blue="0.34285715222358704" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.07000000029802322" green="0.9734285473823547" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label alignment="CENTER" layoutX="904.0" layoutY="395.0" prefHeight="29.0" prefWidth="131.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Eşleşme Yüzdesi" underline="true">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="1.0" blue="0.34285715222358704" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.07000000029802322" green="0.9734285473823547" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="619.0" layoutY="154.0" prefHeight="29.0" prefWidth="388.0" rotate="90.0" style="-fx-background-color: black; -fx-background-radius: 5;" text="---------------------------------------------------------">
+         <font>
+            <Font name="Arial Black" size="20.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="1.0" blue="0.34285715222358704" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.07000000029802322" green="0.9734285473823547" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <JFXTextArea fx:id="aramaCubugu" layoutX="185.0" layoutY="175.0" prefHeight="31.0" prefWidth="464.0" style="-fx-border-color: black; -fx-border-width: 5;">
+         <unFocusColor>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="1.0" blue="0.34285715222358704" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.07000000029802322" green="0.9734285473823547" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </unFocusColor>
+         <focusColor>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" blue="0.8571428656578064" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color red="1.0" blue="0.8571428656578064" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </focusColor>
+      </JFXTextArea>
+   </children>
+</AnchorPane>

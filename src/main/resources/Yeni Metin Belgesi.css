@@ -1,0 +1,6 @@
+.custom-AnchorPane {
+    -fx-background-color: linear-gradient(to bottom, #f5f5f5, #cccccc);
+    -fx-border-color: darkgrey;
+    -fx-border-width: 2;
+    -fx-opaque-insets: 10 5 5 10;  /* Top, Right, Bottom, Left */
+}
